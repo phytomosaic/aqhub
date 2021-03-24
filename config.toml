@@ -21,7 +21,7 @@ summaryLength = 12
     weight = 2
 
 [params]
-  google_analytics_id="G-Z4FCZ2G7MR"
+  google_analytics_id="UA-192916980-1"
   homepage_button_link = '/hub'
   homepage_button_text = 'Enter'
   homepage_intro = 'AQ Hub is the central portal for air quality tools in federal government.'
