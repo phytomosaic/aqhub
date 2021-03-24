@@ -1,0 +1,41 @@
+baseURL = '/' # "www.example.com"
+languageCode = "en-us"
+title = "AQ Hub"
+theme = "hugo-whisper-theme"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+# controls how many words are printed in the content summary on the docs homepage.
+summaryLength = 12
+
+# [[menu.main]]
+#     name = ""
+#     url = "/"
+#     weight = 1
+
+[[menu.main]]
+    name = "AQ Hub"
+    url = "/hub/"
+    weight = 2
+
+[params]
+  google_analytics_id=""
+  homepage_button_link = '/hub'
+  homepage_button_text = 'Enter'
+  homepage_intro = 'AQ Hub is the central portal for air quality tools in federal government.'
+  homepage_image = '/logo_aqhub_thin.png'
+  # enable_anchor_link = true  # adds anchor links to header elements
+
+  [params.homepage_meta_tags]
+    meta_description = "AQ Hub is _the_ central portal for air quality tools in federal government."
+    meta_og_title = "AQ Hub"
+    meta_og_type = "website"
+    meta_og_url = "/"
+    meta_og_image = "/logo_aqhub_thick_mobile.png"
+    meta_og_description = "AQ Hub is the central portal for air quality tools in federal government."
+
+  [params.logo]
+      mobile = "/logo_aqhub_thick_mobile.png"
+      standard  = "/logo_aqhub_thick_desktop.png"

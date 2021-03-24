@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AQ Hub</title>
+    <link>/hub/</link>
+    <description>Recent content on AQ Hub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/hub/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decision tree</title>
+      <link>/hub/3-decision-tree/</link>
+      <pubDate>Tue, 23 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/hub/3-decision-tree/</guid>
+      <description>Make choices that lead you to the appropriate resources.</description>
+    </item>
+    
+    <item>
+      <title>Task search</title>
+      <link>/hub/4-task-search/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/hub/4-task-search/</guid>
+      <description>Tell us your task, we&amp;rsquo;ll match you with the appropriate resources.</description>
+    </item>
+    
+    <item>
+      <title>Direct search</title>
+      <link>/hub/5-direct-search/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/hub/5-direct-search/</guid>
+      <description>Enter the name of the tool or resource you have in mind.</description>
+    </item>
+    
+    <item>
+      <title>List all tools</title>
+      <link>/hub/6-full-list/</link>
+      <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/hub/6-full-list/</guid>
+      <description>List of all tools in AQ Hub.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Task search - AQ Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/logo_aqhub_thick_mobile.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.c0fe8d2d3014e5be2d398009b6e41b98fac3148b678ee73de19badf83cd1bc64.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-aq hub">
+      <a href="/hub/">
+        <span>AQ Hub</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/logo_aqhub_thick_desktop.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/logo_aqhub_thick_mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-aq hub">
+      <a href="/hub/">
+        <span>AQ Hub</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Hub</h4>
+  <ul>
+    
+    <li class="">
+      <a href="/hub/3-decision-tree/">Decision tree</a>
+    </li>
+    
+    <li class="active ">
+      <a href="/hub/4-task-search/">Task search</a>
+    </li>
+    
+    <li class="">
+      <a href="/hub/5-direct-search/">Direct search</a>
+    </li>
+    
+    <li class="">
+      <a href="/hub/6-full-list/">List all tools</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Task search</h1>
+<div class="content ">
+  <p>Tell us your task, we will match you with the appropriate resources.</p>
+
+
+<!--- CSS begin --->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(200, 200, 200, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window>div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 2rem;
+  background: #fff;
+  color: #444;
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+ 
+a {
+  color: #f2e3ff;
+}
+
+
+</style>
+</head>
+<!--- CSS end --->
+
+
+
+
+<!--- GRID container begin --->
+<br>
+<div class="container-fluid">
+
+  <!--- 1 row --->
+  <div class="row mb-1" id="row1">
+
+  <!-- tile 1 -->
+    <div class="col-sm mr-1" style="background: #159eb3; text-align: center; border-radius: 2px;">
+      <a style="text-decoration:none;" href="#open-modal-1">Evaluate critical loads</a>
+      <div id="open-modal-1" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Evaluate critical loads</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 2 -->
+    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+      <a style="text-decoration:none;" href="#open-modal-2">Estimate N or S deposition</a>
+      <div id="open-modal-2" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Estimate N or S deposition</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 3 -->
+    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+      <a style="text-decoration:none;" href="#open-modal-3">Find original raw data</a>
+      <div id="open-modal-3" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Find original raw data</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>   
+    
+  </div> <!--- 1 row END --->
+
+
+  <!--- 2 row --->
+  <div class="row mb-1" id="row2">
+
+  <!-- tile 4 -->
+    <div class="col-sm mr-1" style="background: #159eb3; text-align: center; border-radius: 2px;">
+      <a style="text-decoration:none;" href="#open-modal-4">Automated reports</a>
+      <div id="open-modal-4" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Automated reports</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 5 -->
+    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+      <a style="text-decoration:none;" href="#open-modal-5">Mapping and visualization</a>
+      <div id="open-modal-5" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Mapping and visualization</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 6 -->
+    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+      <a style="text-decoration:none;" href="#open-modal-6">Wilderness administration</a>
+      <div id="open-modal-6" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Wilderness administration</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>   
+    
+  </div> <!--- 2 row END --->
+
+
+  <!--- 3 row --->
+  <div class="row mb-1" id="row2">
+  <!-- tile 7 -->
+    <div class="col-sm mr-1" style="background: #159eb3; text-align: center; border-radius: 2px;">
+      <a style="text-decoration:none;" href="#open-modal-7">NEPA assessments</a>
+      <div id="open-modal-7" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>NEPA assessments</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 8 -->
+    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+      <a style="text-decoration:none;" href="#open-modal-8">PSD and state permitting</a>
+      <div id="open-modal-8" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>PSD and state permitting</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 9 -->
+    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+      <a style="text-decoration:none;" href="#open-modal-9">Forecast stress responses</a>
+      <div id="open-modal-9" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Forecast stress responses</h1>
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>  
+    
+  </div> <!--- 3 row END --->
+
+</div>
+<!--- GRID container end --->
+
+<br><br><br>
+
+
+<!-- raw HTML omitted -->
+
+
+<br/><br/>
+</div>
+<a class="button button-primary mb-2" href="/hub/">Home</a>
+</div>
+
+
+<!-- raw HTML omitted -->
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="nadp_clad"><a href="http://nadp.slh.wisc.edu/committees/clad/workgroups.aspx">AQ Hub is a collaborative effort of NADP-CLAD, 2021</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
