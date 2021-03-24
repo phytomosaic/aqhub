@@ -9,34 +9,33 @@ Complete list of all tools in AQ Hub.
 
 ###### Items/sources
 
-0. CLAD overview: defining/introducing what is a CL
+CLAD overview: defining/introducing what is a CL
 
-1. NPS Conditions and Trends  
+NPS Conditions and Trends  
 
-1. NPS automated reports per Park/Forest/unit
+NPS automated reports per unit
 
-2. EPA CL Mapper and NCLD Natl Critical Loads Database  
-3. USFS NCLAS (applies to all Fed land)  
+EPA CL Mapper and NCLD Natl Critical Loads Database  
 
-4. USFS Wilderness WCM/WSP "one-click" reports (FS/NPS/FWS/BLM)  
+USFS NCLAS (all Fed land)  
 
-5. USFS planning and forest mgmt: AQ interaction with other stressors  
+USFS Wilderness WCM/WSP "one-click" reports (FS/NPS/FWS/BLM)  
 
-6. Deposition models and data  
-    EPA CMAQ model -- available in CLmapper (not standalone)
-    NADP TDep model -- available in CLmapper (not standalone)
+USFS planning and forest mgmt: AQ interaction with other stressors  
 
-7. Response data:  
+Deposition models and data  
+    EPA CMAQ model -- available in CLmapper  
+    NADP TDep model -- available in CLmapper  
+
+Response data:  
     aquatic database  
     lichen database  
     FIA trees  
-    FIA herbs
+    FIA herbs  
     
-8. Forest planning and NEPA: USFS Air Program National Documents  
+Forest planning and NEPA: USFS Air Program National Documents  
 
-10. Federal land managers' air quality related values work group (FLAG)  
-
-
+FLAG: federal land managers' air quality related values work group  
 
 ###### Other possibilities:
 
