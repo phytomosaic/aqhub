@@ -106,36 +106,47 @@
   <p>Make choices that lead you to the appropriate resources.</p>
 
  
-<!--- HTML BEGIN --->
-
+<!--- HTML BEGIN ---> 
+<!--- specimen at https://jsfiddle.net/te366hu2/2/  --->
 
 <!--- CSS begin --->
 <head>
 <style>
 
-dl.decision-tree dl {
-  margin:3px 0px;
+ul.tree li {
+    list-style-type: none;
+    position: relative;
 }
 
-dl.decision-tree dd {
-  margin:3px 0px 3px 20px;
+ul.tree li ul {
+    display: none;
 }
 
-dl.decision-tree dd.collapsed {
-  display:none;
+ul.tree li.open > ul {
+    display: block;
 }
 
-dl.decision-tree dt:before {
-  content:"-";
-  display:inline-block;
-  width:10px;
-  font-weight:bold; font-size:65%;
+ul.tree li a {
+    text-decoration: none;
 }
 
-dl.decision-tree dt.collapsed:before {
-  content:"+";
+ul.tree li a:before {
+    height: 1em;
+    padding:0 .1em;
+    font-size: .8em;
+    display: block;
+    position: absolute;
+    left: -1.3em;
+    top: .2em;
 }
 
+ul.tree li > a:not(:last-child):before {
+    content: '+';
+}
+
+ul.tree li.open > a:not(:last-child):before {
+    content: '-';
+}
 </style>
 </head>
 <!--- CSS end --->
@@ -143,62 +154,155 @@ dl.decision-tree dt.collapsed:before {
 
 
 <!--- JS begin --->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-  $("dl.decision-tree dd, dl.decision-tree dt").addClass("collapsed");
-  $("dl.decision-tree dt").click(function(event) {
-  	$(event.target).toggleClass("collapsed");
-    $(event.target).next().toggleClass("collapsed");
-  });
+<script type="text/javascript">
+//<![CDATA[
+var tree = document.querySelectorAll('ul.tree a:not(:last-child)');
+for(var i = 0; i < tree.length; i++){
+    tree[i].addEventListener('click', function(e) {
+        var parent = e.target.parentElement;
+        var classList = parent.classList;
+        if(classList.contains("open")) {
+            classList.remove('open');
+            var opensubs = parent.querySelectorAll(':scope .open');
+            for(var i = 0; i < opensubs.length; i++){
+                opensubs[i].classList.remove('open');
+            }
+        } else {
+            classList.add('open');
+        }
+    });
+}
+//]]>
 </script>
 <!--- JS end --->
 
 
 
 <!--- html begin --->
-<dl class="decision-tree">
-  <dt>Choice 1</dt>
-  <dd><dl>
-         <dt>Choice 1 - 1</dt>
-         <dd>
-           <dl>
-             <dt>Choice 1 - 1 - 1</dt>
-             <dd>[...]</dd>
-             <dt>Choice 1 - 1 - 2</dt>
-             <dd>[...]</dd>
-             <dt>Choice 1 - 1 - 3</dt>
-             <dd>[...]</dd>
-           </dl>
-         </dd>
-         <dt>Choice 1 - 2</dt>
-         <dd>[...]</dd>
-         <dt>Choice 1 - 3</dt>
-         <dd>[...]</dd>
-      </dl>
-  </dd>
-  <dt>Choice 2</dt>
-  <dd><dl>
-         <dt>Choice 2 - 1</dt>
-         <dd>[...]</dd>
-         <dt>Choice 2 - 2</dt>
-         <dd>[...]</dd>
-         <dt>Choice 2 - 3</dt>
-         <dd>[...]</dd>
-      </dl>
-  </dd>
-  <dt>Choice 3</dt>
-  <dd><dl>
-         <dt>Choice 3 - 1</dt>
-         <dd>[...]</dd>
-         <dt>Choice 3 - 2</dt>
-         <dd>[...]</dd>
-         <dt>Choice 3 - 3</dt>
-         <dd>[...]</dd>
-      </dl>
-  </dd>
-</dl>
+<ul class="tree">
+  <li><a href="#">Choice 1</a>
+    <ul>
+      <li><a href="#">Item A</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item B</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item C</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item D</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item E</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li><a href="#">Choice 2</a>
+    <ul>
+      <li><a href="#">Item A</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item B</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item C</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item D</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item E</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li><a href="#">Choice 3</a>
+    <ul>
+      <li><a href="#">Item A</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item B</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item C</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item D</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Item E</a>
+        <ul>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li><a href="#">Sub-item 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
 <br><br><br>
 <!--- html end --->
-
 
 <!--- HTML END --->
 
