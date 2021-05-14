@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Task search - CL Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/logo_aqhub_thick_mobile.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.c0fe8d2d3014e5be2d398009b6e41b98fac3148b678ee73de19badf83cd1bc64.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-cl hub">
+      <a href="/hub/">
+        <span>CL Hub</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/logo_aqhub_thick_desktop.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/logo_aqhub_thick_mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-cl hub">
+      <a href="/hub/">
+        <span>CL Hub</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Hub</h4>
+  <ul>
+    
+    <li class="active ">
+      <a href="/hub/3-task-search/">Task search</a>
+    </li>
+    
+    <li class="">
+      <a href="/hub/4-direct-search/">Direct search</a>
+    </li>
+    
+    <li class="">
+      <a href="/hub/5-decision-tree/">Decision tree</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Task search</h1>
+<div class="content ">
+  <p>Tell us your task, we will match you with the appropriate resources.</p>
+
+
+<!--- CSS begin --->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(200, 200, 200, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window>div {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  margin: 10% auto;
+  padding: 2rem;
+  background: #fff;
+  color: #444;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+a {
+  color: #f2e3ff;
+}
+
+.row {
+  height: 80px;
+}
+
+.col-sm {
+  display: flex;
+  background: #159eb3; 
+  border-radius: 2px;
+  text-align: center; 
+  align-items: center;
+}
+
+</style>
+</head>
+<!--- CSS end --->
+
+
+
+
+<!--- GRID container begin --->
+<br>
+<div class="container-fluid">
+
+
+
+  <!--- 1 row --->
+  <div class="row mb-1" id="row1">
+  <!-- tile 1 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-1">Learn basic CL concepts</a>
+      <div id="open-modal-1" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Learn basic CL concepts</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 2 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-2">Find CLs/exceedances</a>
+      <div id="open-modal-2" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Find CLs/exceedances</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 3 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-3">Determine area of impact/exceedance</a>
+      <div id="open-modal-3" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Determine area of impact/exceedance</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>   
+    
+  </div> <!--- 1 row END --->
+
+
+
+<!--- 2 row --->
+  <div class="row mb-1" id="row2">
+  <!-- tile 4 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-4">Estimate deposition</a>
+      <div id="open-modal-4" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Estimate deposition</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 5 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-5">Get automated reports</a>
+      <div id="open-modal-5" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Get automated reports</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 6 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-6">Find ecosystem receptor data</a>
+      <div id="open-modal-6" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Find ecosystem receptor data</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>   
+    
+  </div> <!--- 2 row END --->
+
+
+  <!--- 3 row --->
+  <div class="row mb-1" id="row3">
+
+  <!-- tile 7 -->
+    <div class="col-sm mr-1" style="background: #159eb3; text-align: center; border-radius: 2px;">
+      <a style="text-decoration:none;" href="#open-modal-7">Find reference literature</a>
+      <div id="open-modal-7" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Find reference literature</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 8 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-8">Mapping and visualization</a>
+      <div id="open-modal-8" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Mapping and visualization</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 9 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-9">Forecasting</a>
+      <div id="open-modal-9" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Forecasting</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>   
+    
+  </div> <!--- 3 row END --->
+
+
+  <!--- 4 row --->
+  <div class="row mb-1" id="row4">
+  <!-- tile 10 -->
+    <div class="col-sm mr-1" style="background: #159eb3; text-align: center; border-radius: 2px;">
+      <a style="text-decoration:none;" href="#open-modal-10">NEPA assessments</a>
+      <div id="open-modal-10" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>NEPA assessments</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 11 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-11">PSD and state permitting</a>
+      <div id="open-modal-11" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>PSD and state permitting</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 12 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-12">Wilderness administration</a>
+      <div id="open-modal-12" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Wilderness administration</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>  
+    
+  </div> <!--- 4 row END --->
+  
+  
+  
+  <!--- 5 row --->
+  <div class="row mb-1" id="row5">
+  <!-- tile 13 -->
+    <div class="col-sm mr-1" style="background: #159eb3; text-align: center; border-radius: 2px;">
+      <a style="text-decoration:none;" href="#open-modal-13">Forest planning</a>
+      <div id="open-modal-13" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Forest planning</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 14 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-14">Invasive species</a>
+      <div id="open-modal-14" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Invasive species</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 15 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-15">Landscape/national assessments</a>
+      <div id="open-modal-15" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Landscape/national assessments</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>  
+    
+  </div> <!--- 5 row END --->
+  
+  
+  
+  <!--- 16 row --->
+  <div class="row mb-1" id="row6">
+  <!-- tile 7 -->
+    <div class="col-sm mr-1" style="background: #159eb3; text-align: center; border-radius: 2px;">
+      <a style="text-decoration:none;" href="#open-modal-16">Find emissions sources</a>
+      <div id="open-modal-16" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>Find emissions sources</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- tile 17 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-17">x</a>
+      <div id="open-modal-17" class="modal-window">
+        <div>
+          <a style="text-decoration:none;" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>x</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>    
+
+  <!-- tile 18 -->
+    <div class="col-sm mr-1">
+      <a style="text-decoration:none;" href="#open-modal-18">x</a>
+      <div id="open-modal-18" class="modal-window">
+        <div>
+          <a style="text-decoration:none" href="#modal-close" title="Close" class="modal-close">Close &times;</a>
+          <h1>x</h1>  <!-- BUTTON TEXT -->
+          <div>URL to site 1 here.</div>
+          <div>URL to site 2 here.</div>
+          <div>URL to site 3 here.</div>
+        </div>
+      </div>
+    </div>  
+    
+  </div> <!--- 6 row END --->
+  
+  
+
+</div>
+<!--- GRID container end --->
+
+<br>
+
+
+<!-- raw HTML omitted -->
+
+
+<br/><br/>
+</div>
+<a class="button button-primary mb-2" href="/hub/">Home</a>
+</div>
+
+
+<!-- raw HTML omitted -->
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-192916980-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-192916980-1');
+      </script>
+    
+  
+
+
+</body>
+
+</html>

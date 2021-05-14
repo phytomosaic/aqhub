@@ -1,7 +1,7 @@
 ---
 title: "Task search"
-date: '2021-05-14'
-weight: 4
+date: "2021-05-14"
+weight: 3
 summary: Tell us your task, we'll match you with the appropriate resources.
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: "2021-05-14"
 title: Direct search
-weight: 5
+weight: 4
 summary: Enter the name of the tool or resource you have in mind.
 ---
 

@@ -8,30 +8,30 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Decision tree</title>
-      <link>/hub/3-decision-tree/</link>
-      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/hub/3-decision-tree/</guid>
-      <description>Make choices that lead you to the appropriate resources.</description>
-    </item>
-    
-    <item>
       <title>Task search</title>
-      <link>/hub/4-task-search/</link>
+      <link>/hub/3-task-search/</link>
       <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/hub/4-task-search/</guid>
+      <guid>/hub/3-task-search/</guid>
       <description>Tell us your task, we&amp;rsquo;ll match you with the appropriate resources.</description>
     </item>
     
     <item>
       <title>Direct search</title>
-      <link>/hub/5-direct-search/</link>
+      <link>/hub/4-direct-search/</link>
       <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/hub/5-direct-search/</guid>
+      <guid>/hub/4-direct-search/</guid>
       <description>Enter the name of the tool or resource you have in mind.</description>
+    </item>
+    
+    <item>
+      <title>Decision tree</title>
+      <link>/hub/5-decision-tree/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/hub/5-decision-tree/</guid>
+      <description>Make choices that lead you to the appropriate resources.</description>
     </item>
     
   </channel>

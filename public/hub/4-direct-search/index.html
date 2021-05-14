@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Direct search - CL Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/logo_aqhub_thick_mobile.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.c0fe8d2d3014e5be2d398009b6e41b98fac3148b678ee73de19badf83cd1bc64.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-cl hub">
+      <a href="/hub/">
+        <span>CL Hub</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img alt="Logo" src="/logo_aqhub_thick_desktop.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img alt="Logo" src="/logo_aqhub_thick_mobile.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-cl hub">
+      <a href="/hub/">
+        <span>CL Hub</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Hub</h4>
+  <ul>
+    
+    <li class="">
+      <a href="/hub/3-task-search/">Task search</a>
+    </li>
+    
+    <li class="active ">
+      <a href="/hub/4-direct-search/">Direct search</a>
+    </li>
+    
+    <li class="">
+      <a href="/hub/5-decision-tree/">Decision tree</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">Direct search</h1>
+<div class="content ">
+  <p>Enter the name of the resource you have in mind.  CL Hub will return its URL and take you there.</p>
+
+
+<!--- Dropdown box --->
+<br>
+<form>
+<div style="
+  text-align: center;
+  text-align-last: center;
+  ">
+<div style="display: inline-block;
+  overflow: hidden;
+  <!--- background: #cccccc;--->
+  border: 0px;
+  border-radius: 6px;
+  ">
+<select name="menu1" id="menu1" style="
+  width: 400px;
+  height:35px;
+  border-radius: 6px;
+  border:1px solid #cccccc;
+  background: #159eb3;
+  color: #f2e3ff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-align-last: center;
+  ">
+<option value="http://nadp.slh.wisc.edu/committees/clad/"> CLAD overview </option>
+<option value="https://www.nps.gov/subjects/air/park-conditions-trends.htm"> NPS Conditions and Trends </option>
+<option value="https://www.nps.gov/subjects/air/"> NPS automated reports per unit </option>
+<option value="https://clmapper.epa.gov/"> EPA CL Mapper and NCLD Natl Critical Loads Database </option>
+<option value="https://nclas.ecosheds.org/"> NCLAS </option>
+<option value="https://ecol.shinyapps.io/wildstew/"> Wilderness WCM/WSP "one-click" reports </option>
+<option value="https://ecol.shinyapps.io/hotspots/"> USFS Hotspots Mapper </option>
+<option value="https://www.fs.fed.us/air/natdocs.htm"> USFS Air Program National Documents </option>
+<option value="https://www.nps.gov/subjects/air/permitresources.htm#FLAG"> FLAG: Federal land managers' air quality group (FLAG) </option>
+<option value="https://www.epa.gov/airmarkets"> Data: EPA Clean Air Markets </option>
+<option value="https://www.epa.gov/air-emissions-inventories/national-emissions-inventory-nei"> EPA National Emissions Inventory </option>
+<option value="https://views.cira.colostate.edu/fed/"> FED: Federal Land Manager Environmental Database </option>
+<option value="https://clmapper.epa.gov/"> Data: EPA CMAQ model -- available in CLmapper </option>
+<option value="https://clmapper.epa.gov/"> Data: NADP TDep model -- available in CLmapper </option>
+<option value="https://www.fs.fed.us/air/aquatic_ecosystems.htm"> Data: USFS aquatic database </option>
+<option value="https://www.epa.gov/waterdata/water-quality-data"> Data: EPA aquatic database </option>
+<option value="http://gis.nacse.org/lichenair/"> Data: USFS lichen database </option>
+<option value="https://apps.fs.usda.gov/fia/datamart/datamart.html"> Data: USFS FIA trees </option>
+<option value="https://apps.fs.usda.gov/fia/datamart/datamart.html"> Data: USFS FIA herbs </option>
+</select>
+<br>
+<p id="prgh"></p>
+</form>
+</div>
+</div>
+
+
+
+<br>
+<br>
+<!--- Dropdown javascript --->
+<script type="text/javascript">
+ var urlmenu = document.getElementById('menu1');
+ urlmenu.onchange = function() {
+  var text = this.options[ this.selectedIndex ].value; //its a text
+  document.getElementById("prgh").innerHTML = text;
+  window.open( this.options[ this.selectedIndex ].value );
+ };
+</script>
+
+
+<!-- raw HTML omitted -->
+
+
+<br/><br/>
+</div>
+<a class="button button-primary mb-2" href="/hub/">Home</a>
+</div>
+
+
+<!-- raw HTML omitted -->
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-192916980-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-192916980-1');
+      </script>
+    
+  
+
+
+</body>
+
+</html>
