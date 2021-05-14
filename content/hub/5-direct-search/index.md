@@ -1,11 +1,11 @@
 ---
-date: "2021-03-21"
+date: "2021-05-14"
 title: Direct search
 weight: 5
 summary: Enter the name of the tool or resource you have in mind.
 ---
 
-Enter the name of the resource you have in mind.  AQ Hub will return its URL and take you there.
+Enter the name of the resource you have in mind.  CL Hub will return its URL and take you there.
 
 {{< rawhtml >}}
 <!--- Dropdown box --->
@@ -21,12 +21,16 @@ Enter the name of the resource you have in mind.  AQ Hub will return its URL and
 <option value="https://ecol.shinyapps.io/hotspots/"> USFS Hotspots Mapper </option>
 <option value="https://www.fs.fed.us/air/natdocs.htm"> USFS Air Program National Documents </option>
 <option value="https://www.nps.gov/subjects/air/permitresources.htm#FLAG"> FLAG: Federal land managers' air quality group (FLAG) </option>
+<option value="https://www.epa.gov/airmarkets"> Data: EPA Clean Air Markets </option>
+<option value="https://www.epa.gov/air-emissions-inventories/national-emissions-inventory-nei"> EPA National Emissions Inventory </option>
+<option value="https://views.cira.colostate.edu/fed/"> FED: Federal Land Manager Environmental Database </option>
 <option value="https://clmapper.epa.gov/"> Data: EPA CMAQ model -- available in CLmapper </option>
 <option value="https://clmapper.epa.gov/"> Data: NADP TDep model -- available in CLmapper </option>
-<option value="https://www.fs.fed.us/air/aquatic_ecosystems.htm"> Data: aquatic database </option>
-<option value="http://gis.nacse.org/lichenair/"> Data: lichen database </option>
-<option value="https://apps.fs.usda.gov/fia/datamart/datamart.html"> Data: FIA trees </option>
-<option value="https://apps.fs.usda.gov/fia/datamart/datamart.html"> Data: FIA herbs </option>
+<option value="https://www.fs.fed.us/air/aquatic_ecosystems.htm"> Data: USFS aquatic database </option>
+<option value="https://www.epa.gov/waterdata/water-quality-data"> Data: EPA aquatic database </option>
+<option value="http://gis.nacse.org/lichenair/"> Data: USFS lichen database </option>
+<option value="https://apps.fs.usda.gov/fia/datamart/datamart.html"> Data: USFS FIA trees </option>
+<option value="https://apps.fs.usda.gov/fia/datamart/datamart.html"> Data: USFS FIA herbs </option>
 </select>
 <br>
 <p id="prgh"></p>
