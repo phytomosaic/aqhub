@@ -1,5 +1,5 @@
 ---
-date: "2021-03-23"
+date: "2021-05-14"
 title: Decision tree
 weight: 3
 summary: Make choices that lead you to the appropriate resources.

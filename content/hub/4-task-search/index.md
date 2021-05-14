@@ -1,5 +1,5 @@
 ---
-date: "2021-03-21"
+date: "2021-05-14"
 title: Task search
 weight: 4
 summary: Tell us your task, we'll match you with the appropriate resources.
@@ -67,11 +67,9 @@ Tell us your task, we will match you with the appropriate resources.
   margin: 0 0 15px;
 }
 
- 
 a {
   color: #f2e3ff;
 }
-
 
 </style>
 </head>
