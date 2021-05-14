@@ -6,6 +6,10 @@ Critical Loads Hub
 
 CL Hub is a portal for tools related to critical loads of atmospheric deposition in the US.
 
+### Current (temporary) location
+
+https://aqhub.netlify.app/
+
 ### Personnel
 
 **Organizers:** Linda Geiser (linda.geiser@usda.gov) and Linda Pardo (linda.pardo@usda.bov)
