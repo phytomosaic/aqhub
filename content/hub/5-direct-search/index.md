@@ -11,7 +11,28 @@ Enter the name of the resource you have in mind.  CL Hub will return its URL and
 <!--- Dropdown box --->
 <br>
 <form>
-<select name="menu1" id="menu1" style="width: 400px;">
+<div style="
+  text-align: center;
+  text-align-last: center;
+  ">
+<div style="display: inline-block;
+  overflow: hidden;
+  <!--- background: #cccccc;--->
+  border: 0px;
+  border-radius: 6px;
+  ">
+<select name="menu1" id="menu1" style="
+  width: 400px;
+  height:35px;
+  border-radius: 6px;
+  border:1px solid #cccccc;
+  background: #159eb3;
+  color: #f2e3ff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-align-last: center;
+  ">
 <option value="http://nadp.slh.wisc.edu/committees/clad/"> CLAD overview </option>
 <option value="https://www.nps.gov/subjects/air/park-conditions-trends.htm"> NPS Conditions and Trends </option>
 <option value="https://www.nps.gov/subjects/air/"> NPS automated reports per unit </option>
@@ -35,6 +56,11 @@ Enter the name of the resource you have in mind.  CL Hub will return its URL and
 <br>
 <p id="prgh"></p>
 </form>
+</div>
+</div>
+
+
+
 <br>
 <br>
 <!--- Dropdown javascript --->

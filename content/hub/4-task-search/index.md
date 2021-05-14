@@ -34,16 +34,15 @@ Tell us your task, we will match you with the appropriate resources.
 }
 
 .modal-window>div {
-  width: 400px;
-  position: relative;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
   margin: 10% auto;
   padding: 2rem;
   background: #fff;
   color: #444;
-}
-
-.modal-window header {
-  font-weight: bold;
 }
 
 .modal-close {
@@ -71,6 +70,18 @@ a {
   color: #f2e3ff;
 }
 
+.row {
+  height: 80px;
+}
+
+.col-sm {
+  display: flex;
+  background: #159eb3; 
+  border-radius: 2px;
+  text-align: center; 
+  align-items: center;
+}
+
 </style>
 </head>
 <!--- CSS end --->
@@ -84,9 +95,8 @@ a {
 
   <!--- 1 row --->
   <div class="row mb-1" id="row1">
-
   <!-- tile 1 -->
-    <div class="col-sm mr-1" style="background: #159eb3; text-align: center; border-radius: 2px;">
+    <div class="col-sm mr-1">
       <a style="text-decoration:none;" href="#open-modal-1">Evaluate critical loads</a>
       <div id="open-modal-1" class="modal-window">
         <div>
@@ -100,7 +110,7 @@ a {
     </div>
 
   <!-- tile 2 -->
-    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+    <div class="col-sm mr-1">
       <a style="text-decoration:none;" href="#open-modal-2">Estimate N or S deposition</a>
       <div id="open-modal-2" class="modal-window">
         <div>
@@ -114,7 +124,7 @@ a {
     </div>    
 
   <!-- tile 3 -->
-    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+    <div class="col-sm mr-1">
       <a style="text-decoration:none;" href="#open-modal-3">Find original raw data</a>
       <div id="open-modal-3" class="modal-window">
         <div>
@@ -148,7 +158,7 @@ a {
     </div>
 
   <!-- tile 5 -->
-    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+    <div class="col-sm mr-1">
       <a style="text-decoration:none;" href="#open-modal-5">Mapping and visualization</a>
       <div id="open-modal-5" class="modal-window">
         <div>
@@ -162,7 +172,7 @@ a {
     </div>    
 
   <!-- tile 6 -->
-    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+    <div class="col-sm mr-1">
       <a style="text-decoration:none;" href="#open-modal-6">Wilderness administration</a>
       <div id="open-modal-6" class="modal-window">
         <div>
@@ -195,7 +205,7 @@ a {
     </div>
 
   <!-- tile 8 -->
-    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+    <div class="col-sm mr-1">
       <a style="text-decoration:none;" href="#open-modal-8">PSD and state permitting</a>
       <div id="open-modal-8" class="modal-window">
         <div>
@@ -209,7 +219,7 @@ a {
     </div>    
 
   <!-- tile 9 -->
-    <div class="col-sm mr-1" style="background: #159eb3; color: #ffffff; text-align: center; border-radius: 3px;">
+    <div class="col-sm mr-1">
       <a style="text-decoration:none;" href="#open-modal-9">Forecast stress responses</a>
       <div id="open-modal-9" class="modal-window">
         <div>
@@ -227,7 +237,7 @@ a {
 </div>
 <!--- GRID container end --->
 
-<br><br><br>
+<br>
 {{< /rawhtml >}}
 
 <!--- Back button begin --->
