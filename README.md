@@ -1,7 +1,12 @@
-## AQ Hub
+## CL Hub
 
-Air Quality Hub
+Critical Loads Hub
 
-### What is AQ Hub?
+### What is CL Hub?
 
-AQ Hub is the central portal for air quality tools in federal government.
+CL Hub is a portal for tools related to critical loads of atmospheric deposition in the US.
+
+### Personnel
+
+**Organizers:** Linda Geiser (linda.geiser@usda.gov) and Linda Pardo (linda.pardo@usda.bov)
+**Maintainer:** Rob Smith (robert.smith3@usda.gov)
